@@ -4,16 +4,15 @@ import {
   Text,
   SafeAreaView,
   Image,
-  TouchableWithoutFeedback,
+  TouchableOpacity,
 } from "react-native";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Hello Image!</Text>
-      <TouchableWithoutFeedback onPress={() => console.log("image pressed")}>
+      <TouchableOpacity onPress={() => console.log("image pressed")}>
         <Image
-          blurRadius={10}
           fadeDuration={1000}
           source={{
             width: 200,
@@ -21,7 +20,7 @@ export default function App() {
             uri: "https://picsum.photos/200/300",
           }}
         />
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </SafeAreaView>
   );

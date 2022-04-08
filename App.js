@@ -8,10 +8,7 @@ export default function App() {
         color="orange"
         title="click me"
         onPress={() =>
-          Alert.alert("i am title", "my message is here", [
-            { text: "Yes", onPress: () => console.log("yes pressed") },
-            { text: "No", onPress: () => console.log("no pressed") },
-          ])
+          Alert.prompt("my title", "my message", (text) => console.log(text))
         }
       />
       <StatusBar style="auto" />

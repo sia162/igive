@@ -3,7 +3,7 @@ import { StyleSheet, SafeAreaView, Button, Alert } from "react-native";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={{ backgroundColor: "orange" }}>
       <Button
         color="orange"
         title="click me"

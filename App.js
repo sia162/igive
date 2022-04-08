@@ -1,12 +1,16 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, SafeAreaView } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello World!</Text>
+    <SafeAreaView style={styles.container}>
+      <Text numberOfLines={2} onPress={() => console.log("text pressed")}>
+        Hello World! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Blanditiis rerum amet sed dolor harum, earum consectetur ex debitis a
+        officiis.
+      </Text>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 

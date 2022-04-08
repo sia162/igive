@@ -1,14 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, SafeAreaView } from "react-native";
+import { StyleSheet, Text, SafeAreaView, Image } from "react-native";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={2} onPress={() => console.log("text pressed")}>
-        Hello World! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Blanditiis rerum amet sed dolor harum, earum consectetur ex debitis a
-        officiis.
-      </Text>
+      <Text>Hello Image!</Text>
+      <Image source={require("./assets/favicon.png")} />
       <StatusBar style="auto" />
     </SafeAreaView>
   );

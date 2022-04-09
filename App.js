@@ -3,10 +3,14 @@ import { StyleSheet, SafeAreaView, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={{ backgroundColor: "blue", flex: 1 }}>
-      <View style={{ backgroundColor: "orange", flex: 2 }}></View>
-      <View style={{ backgroundColor: "red", flex: 1 }}></View>
-      <View style={{ backgroundColor: "green", flex: 1 }}></View>
+    <View style={{ backgroundColor: "grey", flex: 1, flexDirection: "row" }}>
+      <View
+        style={{ backgroundColor: "orange", width: 100, height: 100 }}
+      ></View>
+      <View style={{ backgroundColor: "red", width: 100, height: 100 }}></View>
+      <View
+        style={{ backgroundColor: "green", width: 100, height: 100 }}
+      ></View>
     </View>
   );
 }
